@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spglobal-index-management-rebalance-engine"
+version = "1.0.0"
+description = "S&P Dow Jones Index Management, Divisor Recalibration, and Corporate Action Reconstitution Engine"
+authors = [{ name = "Bhupesh Chandra Dimri", email = "bhupeshcdimri21@gmail.com" }]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "streamlit>=1.30.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
